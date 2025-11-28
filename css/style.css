@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+US+Trad+Guides&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+body {
+  /* font-family: "Playwrite US Trad Guides", cursive; */
+}
+.header {
+    width: 100%;
+    border: 1px solid #000;
+}
+.container {
+    max-width: 1240px;
+    width: 100%;
+    height: auto;
+    padding: 20px 0px;
+    margin: 0 auto;
+}
+.header__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header__logo {
+}
+.nav {
+}
+.nav__links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.nav__link {
+    font-size: 22px;
+}
+.login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    cursor: pointer;
+}
+.sign__in{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.sign__up{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    width: 100px;
+    background-color: #D4AF37;
+}
