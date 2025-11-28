@@ -6,56 +6,57 @@
   list-style: none;
 }
 body {
-  /* font-family: "Playwrite US Trad Guides", cursive; */
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
 }
 .header {
-    width: 100%;
-    border: 1px solid #000;
+  width: 100%;
+  border: 1px solid #000;
 }
 .container {
-    max-width: 1240px;
-    width: 100%;
-    height: auto;
-    padding: 20px 0px;
-    margin: 0 auto;
+  max-width: 1240px;
+  width: 100%;
+  height: auto;
+  padding: 20px 0px;
+  margin: 0 auto;
 }
-.header__container{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .header__logo {
 }
 .nav {
 }
 .nav__links {
-    display: flex;
-    align-items: center;
-    gap: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 .nav__link {
-    font-size: 22px;
+  font-size: 22px;
 }
-.login{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    cursor: pointer;
+.login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  cursor: pointer;
 }
-.sign__in{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
+.sign__in {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
 }
-.sign__up{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    padding: 10px;
-    border-radius: 20px;
-    width: 100px;
-    background-color: #D4AF37;
+.sign__up {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 20px;
+  width: 100px;
+  background-color: #d4af37;
 }
