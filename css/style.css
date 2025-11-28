@@ -6,12 +6,12 @@
   list-style: none;
 }
 body {
-  font-family: "Inter", sans-serif;
-  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
 }
 .header {
   width: 100%;
-  border: 1px solid #000;
+  border-bottom: 1px solid #e2dfdf;
 }
 .container {
   max-width: 1240px;
@@ -25,16 +25,13 @@ body {
   align-items: center;
   justify-content: space-between;
 }
-.header__logo {
-}
-.nav {
-}
 .nav__links {
   display: flex;
   align-items: center;
   gap: 20px;
 }
-.nav__link {
+.nav__link a {
+  color: #d4af37;
   font-size: 22px;
 }
 .login {
