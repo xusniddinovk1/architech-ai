@@ -45,14 +45,34 @@ body {
 .nav__links {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 28px;
 }
 .nav__link a {
   color: #000;
   font-size: 20px;
+  font-weight: 400;
+  position: relative;
+  transition: 0.3s ease;
+}
+.nav__link a:hover {
+  color: #d4af37;
+}
+.nav__link a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0;
+  height: 2px;
+  background: #d4af37;
+  transition: width 0.3s ease;
+}
+.nav__link a:hover::after {
+  width: 100%;
 }
 .nav__link a:active {
   color: #d4af37;
+  transform: scale(0.95);
 }
 .login {
   display: flex;
@@ -65,21 +85,49 @@ body {
   font-size: 16px;
   font-weight: 400;
   color: #000;
-  padding: 16px 16px;
+  padding: 16px 24px;
   border-radius: 30px;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+.sign__in:hover {
+  transform: translateY(-2px);
+  border-color: rgba(0, 0, 0, 0.2);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+.sign__in:active {
+  transform: scale(0.97);
 }
 .sign__up {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 10px;
   font-size: 16px;
-  font-weight: 100;
+  font-weight: 500;
   line-height: normal;
   color: #000;
-  gap: 10px;
-  padding: 16px 16px;
+  padding: 16px 24px;
   border-radius: 30px;
-  background-color: #d4af37;
+  background: linear-gradient(120deg, #d4af37, #f3d98f, #d4af37);
+  background-size: 200% 200%;
+  transition: background-position 0.4s ease, transform 0.3s ease,
+    box-shadow 0.3s ease;
+  cursor: pointer;
+}
+.sign__up:hover {
+  background-position: right;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 22px rgba(212, 175, 55, 0.35);
+}
+.sign__up svg {
+  transition: transform 0.3s ease;
+}
+.sign__up:hover svg {
+  transform: translateX(5px);
+}
+.sign__up:active {
+  transform: scale(0.97);
 }
 .main {
   border: 1px solid #000;
@@ -120,9 +168,53 @@ body {
   text-align: center;
 }
 .hero__link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
   color: #f0f0f0;
   font-size: 20px;
-  border-radius: 25px;
   padding: 26px 24px;
-  background: linear-gradient(90deg, #d4af37, #0f0f0f);
+  border-radius: 25px;
+  background: linear-gradient(110deg, #111, #d4af37, #111);
+  background-size: 250% 250%;
+  transition: background-position 0.5s ease, transform 0.3s ease,
+    box-shadow 0.3s ease, color 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+.hero__link:hover {
+  background-position: right;
+  transform: translateY(-3px);
+  box-shadow: 0px 8px 25px rgba(212, 175, 55, 0.4);
+}
+.hero__link:active {
+  transform: scale(0.97);
+}
+.hero__link img {
+  transition: transform 0.3s ease;
+}
+.hero__link:hover svg {
+  transform: translate(6px, -6px);
+}
+.hero__link::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 80%;
+  height: 100%;
+  background: linear-gradient(
+    115deg,
+    transparent,
+    rgba(255, 255, 255, 0.4),
+    transparent
+  );
+  transition: 0.5s;
+}
+.hero__link:hover::before {
+  left: 120%;
+}
+.hero__link img {
+  width: 30px;
+  color: #fff;
 }
